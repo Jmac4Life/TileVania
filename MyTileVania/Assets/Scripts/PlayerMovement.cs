@@ -8,11 +8,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float fltRunSpeed = 10f;
     Vector2 moveInput;
     Rigidbody2D myRigidbody;
+    Animator myAnimator;
 
     // Start is called before the first frame update
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
+        myAnimator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -32,6 +34,10 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 playerVelocity = new Vector2 (moveInput.x * fltRunSpeed, myRigidbody.velocity.y);
         myRigidbody.velocity = playerVelocity;
+
+        bool bolPlayerHasHorizontalSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
+        myAnimator.SetBool("isRunning", bolPlayerHasHorizontalSpeed);
+
     }
 
     void FlipSprite()
@@ -42,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
         {
         transform.localScale = new Vector2 (Mathf.Sign(myRigidbody.velocity.x), 1f);
         }
-        
+
     }
 
 }
