@@ -1261,15 +1261,25 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 5, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 1
+  - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 7460775bf1b66d84aa9cd3e4c4dd9a8b, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 1
+  - m_RefCount: 2
     m_Data: {fileID: 21300000, guid: a4e447f6c72cf254a9d765202b641428, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 1
+  - m_RefCount: 2
     m_Data:
       e00: 1
       e01: 0
@@ -1288,7 +1298,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 1
+  - m_RefCount: 2
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -36938,18 +36948,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1082724745434556885, guid: 8f037b01ae55425479a25f34767543a7, type: 3}
-      propertyPath: m_GravityScale
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1082724745434556885, guid: 8f037b01ae55425479a25f34767543a7, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2447148870775363911, guid: 8f037b01ae55425479a25f34767543a7, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2447148870775363911, guid: 8f037b01ae55425479a25f34767543a7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -18.3
@@ -36990,22 +36988,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2826060931784610011, guid: 8f037b01ae55425479a25f34767543a7, type: 3}
-      propertyPath: fltJumpSpeed
-      value: 25
-      objectReference: {fileID: 0}
     - target: {fileID: 3142832566136055352, guid: 8f037b01ae55425479a25f34767543a7, type: 3}
       propertyPath: m_Name
       value: Jmac (Player)
       objectReference: {fileID: 0}
-    - target: {fileID: 3142832566136055352, guid: 8f037b01ae55425479a25f34767543a7, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6162141222304211352, guid: 8f037b01ae55425479a25f34767543a7, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: 68aa957e52da9ae4abaf4d4f1076843f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
