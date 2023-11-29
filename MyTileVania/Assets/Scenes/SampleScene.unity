@@ -1324,11 +1324,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!4 &366053453 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5487238058850134563, guid: 8f037b01ae55425479a25f34767543a7, type: 3}
-  m_PrefabInstance: {fileID: 3065193628148825530}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &416817468
 GameObject:
   m_ObjectHideFlags: 0
@@ -1346,7 +1341,7 @@ GameObject:
   - component: {fileID: 416817475}
   m_Layer: 11
   m_Name: Goober (Enemy)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37391,63 +37386,6 @@ PolygonCollider2D:
       - {x: 45.94051, y: -4.969316}
       - {x: 45.937057, y: 27.970875}
   m_UseDelaunayMesh: 0
---- !u!1001 &3006917930364299277
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3567669609407321332, guid: bb91848cd468ce640ac4f94156289ffa, type: 3}
-      propertyPath: m_Name
-      value: Bullet
-      objectReference: {fileID: 0}
-    - target: {fileID: 8959874984579239124, guid: bb91848cd468ce640ac4f94156289ffa, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8959874984579239124, guid: bb91848cd468ce640ac4f94156289ffa, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8959874984579239124, guid: bb91848cd468ce640ac4f94156289ffa, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8959874984579239124, guid: bb91848cd468ce640ac4f94156289ffa, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8959874984579239124, guid: bb91848cd468ce640ac4f94156289ffa, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8959874984579239124, guid: bb91848cd468ce640ac4f94156289ffa, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8959874984579239124, guid: bb91848cd468ce640ac4f94156289ffa, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8959874984579239124, guid: bb91848cd468ce640ac4f94156289ffa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8959874984579239124, guid: bb91848cd468ce640ac4f94156289ffa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8959874984579239124, guid: bb91848cd468ce640ac4f94156289ffa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: bb91848cd468ce640ac4f94156289ffa, type: 3}
 --- !u!1001 &3065193628148825530
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37496,30 +37434,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2826060931784610011, guid: 8f037b01ae55425479a25f34767543a7, type: 3}
-      propertyPath: gun
-      value: 
-      objectReference: {fileID: 366053453}
-    - target: {fileID: 2826060931784610011, guid: 8f037b01ae55425479a25f34767543a7, type: 3}
-      propertyPath: bullet
-      value: 
-      objectReference: {fileID: 3567669609407321332, guid: bb91848cd468ce640ac4f94156289ffa, type: 3}
-    - target: {fileID: 2826060931784610011, guid: 8f037b01ae55425479a25f34767543a7, type: 3}
-      propertyPath: deathKick.x
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 2826060931784610011, guid: 8f037b01ae55425479a25f34767543a7, type: 3}
-      propertyPath: deathKick.y
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 3142832566136055352, guid: 8f037b01ae55425479a25f34767543a7, type: 3}
       propertyPath: m_Name
       value: Jmac (Player)
       objectReference: {fileID: 0}
-    - target: {fileID: 7481897998685446523, guid: 8f037b01ae55425479a25f34767543a7, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: 68aa957e52da9ae4abaf4d4f1076843f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37533,4 +37451,3 @@ SceneRoots:
   - {fileID: 627323926}
   - {fileID: 3065193628148825530}
   - {fileID: 416817471}
-  - {fileID: 3006917930364299277}
